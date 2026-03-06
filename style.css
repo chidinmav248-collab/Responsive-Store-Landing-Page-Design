@@ -1,0 +1,391 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: radial-gradient(circle, gray, lightgray, darkslategray, black);
+}
+
+/* HEADER STYLING */
+header {
+  display: flex;
+  justify-content: center;
+  gap: 50%;
+  align-items: center;
+  padding: 20px 40px;
+  background: lightgray;
+  height: 100px;
+}
+
+
+.design-logo {
+ width: 100px;
+ height: auto;
+ margin-left: 5%;
+ border: 2px solid black;
+ object-fit: cover;
+border-radius: 50%; 
+}
+
+/* NAV STYLING */
+nav{
+  display: flex;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover{
+    color: gray;
+}
+
+
+.cart{
+  width: 20%;
+  margin-left: 100px;
+}
+
+/* MAIN & PRODUCT SECTION STYLING */
+main{
+    margin: 30px;
+}
+
+main h2{
+    font-size: 50px;
+    text-align: center; 
+}
+
+
+ 
+ .product-card{
+   display: flex;
+   gap: 15px;
+   padding: 10px;
+ }
+
+ .product-card img{
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3/4;
+  border-radius: 12px;
+ }
+
+ .product-card h3{
+  text-align: center;
+ }
+ .product-card p{
+  font-size: 12px;
+  text-align: center;
+ }
+ .product-card1{
+  background-color: white;
+  border: solid 2px black;
+  border-radius: 20px;
+  width: 100%;
+ }
+
+ .product-card2{
+  background-color: white;
+  border: solid 2px black;
+  border-radius: 20px;
+  width: 100%;
+ }
+
+
+ .product-card3{
+  background-color: white;
+  border: solid 2px black;
+  border-radius: 20px;
+  width: 100%;
+ }
+
+ .product-card4{
+  background-color: white;
+  border: solid 2px black;
+  border-radius: 20px;
+  width: 100%;
+ }
+
+ .product-card button{
+  display: block;
+  margin: 4px auto 4px auto; 
+  width: 50%;
+  height: 40px;
+  border: solid 2px black;
+  border-radius: 10px;
+  color: white;
+  background-color: darkslategray;
+ }
+ 
+
+ button:hover{
+  background-color: lightgray;
+  color: white;
+ }
+
+
+ /* FOOTER STYLING */
+ .footer{
+  display: flex;
+  gap: 200px;
+  background-color: gray;
+  padding: 10px;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .footer-img{
+  width: 70px;
+  height: auto;
+  border: 2px solid black;
+  border-radius: 50%;
+ }
+
+ .footer a{
+ text-decoration: none;
+ }
+
+.contacts{
+  flex-direction: column;
+}
+
+
+.socials{
+  display: flex;
+  gap: 20px;
+}
+ .socials img{
+  width: 30px;
+  border-radius: 50%;
+ }
+.copyright{
+  padding-right: 20px;
+    color: white;
+white-space: nowrap;
+}
+
+
+@media (max-width: 567px) {
+
+  /* HEADER STYLING */
+  header {
+    background-color: transparent;
+    height: auto; 
+    flex-direction: column;
+    padding: 15px;
+    gap: 10px;
+  }
+
+  header img {
+    margin-left: 0;  
+  }
+
+  /* NAV STYLING */
+  nav ul {
+    flex-direction: column;  
+    align-items: center;
+    gap: 10px;
+    margin-left: 20px;
+  }
+
+.cart{
+  display: none;
+}
+  
+
+/* MAIN & PRODUCT SECTION STYLING */
+
+main h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.product-card {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+   
+  .product-card1, 
+  .product-card2, 
+  .product-card3, 
+  .product-card4 {
+    width: 100%; 
+    max-width: 100%;
+  }
+
+
+
+  /* FOOTER */
+  .footer{
+    display: flex;
+    flex-direction: column;
+     gap: 15px;
+  }
+
+  .footer-img{
+     width: 15%;
+margin-right: 20px;
+  }
+
+  .privacy{
+    margin-left: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  /* HEADER STYLING */
+  header {
+    background-color: transparent;
+    height: auto; 
+    flex-direction: column;
+    padding: 15px;
+    gap: 10px;
+  }
+
+  header img {
+    margin-left: 0;  
+  }
+
+   /* NAV STYLING */
+  nav ul {
+    flex-direction: column;  
+    align-items: center;
+    margin-left: 20px;
+    gap: 10px;
+  }
+
+
+  .cart{
+  display: none;
+}
+
+
+/* MAIN & PRODUCT SECTION STYLING */
+
+main h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+  .product-card {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+   
+  .product-card1, 
+  .product-card2, 
+  .product-card3, 
+  .product-card4 {
+    width: 100%; 
+    max-width: 100%;
+  }
+
+ /* FOOTER */
+  .footer{
+    display: flex;
+    flex-direction: column;
+     gap: 15px;
+  }
+
+  .footer-img{
+     width: 50px;
+margin-right: 20px;
+  }
+
+  .privacy{
+    margin-left: 15px;
+  }
+}
+
+
+@media screen and (max-width: 920px) {
+
+  /* HEADER STYLING */
+  header {
+    background-color: transparent;
+    height: auto; 
+    flex-direction: column;
+    padding: 15px;
+    gap: 10px;
+  }
+
+  header img {
+    margin-left: 0;  
+  }
+
+   /* NAV STYLING */
+  nav ul {
+    flex-direction: column;  
+    align-items: center;
+    margin-left: 30px;
+    gap: 10px;
+  }
+
+  .cart{
+  display: none;
+}
+
+
+/* MAIN & PRODUCT SECTION STYLING */
+
+main h2 {
+  font-size: 24px;
+  text-align: center;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+  .product-card {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+   
+  .product-card1, 
+  .product-card2, 
+  .product-card3, 
+  .product-card4 {
+    width: 100%; 
+    max-width: 100%;
+  }
+
+ /* FOOTER */
+  .footer{
+    display: flex;
+    flex-direction: column;
+     gap: 15px;
+  }
+
+  .footer-img{
+     width: 50px;
+margin-right: 20px;
+  }
+
+  .privacy{
+    margin-left: 15px;
+  }
+}
+
+
+/* BRIEF DESCRIPTION OF THE DESIGN CHOICES MADE DURING THE DEVELOPMENT PROCESS
+ My design begins with a CSS reset (*{padding:0; margin:0; box-sizing:border-box;}) to remove default browser spacing and create a consistent layout across different devices. A radial gradient background was applied to the body in a circle format to give the page a modern and visually appealing look while maintaining a dark fashion-themed aesthetic.
+
+Flexbox is used in the header, product section, and footer to align and distribute elements evenly, making the layout clean and organized. The header includes a centered navigation layout with spacing between items, while the circular logo image with a border helps strengthen brand identity.
+
+Each product card is styled with a white background, black border, and rounded corners to make the products stand out clearly against the darker background. Images use a fixed aspect ratio to maintain consistent sizing, and text is centered for a balanced presentation.  Buttons include hover effects to improve user interaction and visual feedback.
+
+The "copyright" class attribute was styled with whitespace: nowrap; to make the words appear on a single line so that it will align prefctly with the other elements in the footer
+
+Media queries at different screen widths adjust the layout for smaller devices by stacking elements vertically, resizing images and headings, and simplifying the header and footer structure. This ensures the website remains responsive, readable, and user-friendly on mobile and tablet screens. */
